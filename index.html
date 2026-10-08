@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#050b18">
+  <meta name="description" content="Campus+. Learn more. Connect more. Achieve more. An original, interactive identity for everything your campus can be.">
+  <title>Campus+ — Your next chapter starts here.</title>
+  <link rel="icon" type="image/svg+xml" href="assets/campus-icon.svg">
+  <link rel="stylesheet" href="style.css">
+  <script src="assets/vendor/gsap.min.js" defer></script>
+  <script src="assets/vendor/MotionPathPlugin.min.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <svg class="svg-library" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><defs>
+    <symbol id="icon-mark" viewBox="0 0 64 64"><path d="M44 10 29 3 8 15v32l21 12 15-8V39L29 47l-10-6V22l10-6 15 8" fill="none" stroke="currentColor" stroke-width="4.5" stroke-linejoin="round"/><path d="M49 16v20m-10-10h20" fill="none" stroke="currentColor" stroke-width="4.5" stroke-linecap="round"/></symbol>
+    <symbol id="arrow" viewBox="0 0 24 24"><path d="M5 19 19 5M5 5h14v14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="replay-icon" viewBox="0 0 24 24"><path d="M4 10a8 8 0 1 1 .8 6M4 4v6h6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="sound-icon" viewBox="0 0 24 24"><path d="M4 9h4l5-4v14l-5-4H4zm13-1c2 2 2 6 0 8m3-11c4 4 4 10 0 14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/></symbol>
+  </defs></svg>
+
+  <div class="page-atmosphere" aria-hidden="true"></div>
+  <header class="site-header">
+    <a href="#" class="brand" aria-label="Campus Plus home"><svg><use href="#icon-mark"/></svg><span>campus<span class="brand-plus">+</span></span></a>
+    <nav aria-label="Main navigation"><a class="nav-active" href="#experience">The experience</a><button class="nav-link" data-open="identity">Behind the mark</button></nav>
+    <button class="identity-link" data-open="identity">Explore the identity <svg><use href="#arrow"/></svg></button>
+  </header>
+
+  <main id="experience">
+    <section class="experience" aria-label="Interactive Campus Plus brand experience">
+      <div class="scene-topline"><span class="eyebrow"><i></i> BUILT FOR WHAT’S NEXT</span><span class="edition">THE CAMPUS+ EXPERIENCE <span> / </span> 001</span></div>
+      <div class="hero-intro"><span class="mini-label">ONE CAMPUS. INFINITE POSSIBILITIES.</span></div>
+      <div class="stage" id="stage">
+        <div class="stage-glow" aria-hidden="true"></div>
+        <div id="starfield" aria-hidden="true"></div>
+        <div class="coordinate coord-left" aria-hidden="true">+<span>01 — ∞</span></div><div class="coordinate coord-right" aria-hidden="true">+<span>EXPAND YOUR WORLD</span></div>
+        <svg id="mainSVG" viewBox="0 0 1000 410" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Campus Plus">
+          <title>Campus Plus — everything students need, connected in one campus.</title>
+          <defs>
+            <linearGradient id="wordGradient" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fff"/><stop offset=".55" stop-color="#f0f6ff"/><stop offset="1" stop-color="#b8c9df"/></linearGradient>
+            <linearGradient id="arcGradient" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#2447ff" stop-opacity="0"/><stop offset=".23" stop-color="#2869c7" stop-opacity=".35"/><stop offset=".7" stop-color="#39cfff" stop-opacity=".85"/><stop offset="1" stop-color="#b6fbff"/></linearGradient>
+            <linearGradient id="plusGradient" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#b3fcff"/><stop offset=".45" stop-color="#67e5f7"/><stop offset="1" stop-color="#2cb8e5"/></linearGradient>
+            <filter id="softGlow" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="5"/></filter>
+            <filter id="cometGlow" x="-300%" y="-300%" width="700%" height="700%"><feGaussianBlur stdDeviation="3"/></filter>
+          </defs>
+          <g id="sceneParallax">
+            <g id="orbitGroup" fill="none">
+              <path id="orbitGhost" d="M134 309C205 380 646 352 803 273C878 236 892 181 825 158" stroke="#3783a7" stroke-width=".6" opacity=".18" transform="translate(0 9)"/>
+              <path id="arcBloom" d="M134 309C205 380 646 352 803 273C878 236 892 181 825 158" stroke="url(#arcGradient)" stroke-width="5" filter="url(#softGlow)" opacity=".5"/>
+              <path id="arc" d="M134 309C205 380 646 352 803 273C878 236 892 181 825 158" stroke="url(#arcGradient)" stroke-width="1.35" stroke-linecap="round"/>
+            </g>
+            <g id="logoGroup">
+              <g id="campusIcon" transform="translate(470 70)" color="#83edfa"><use href="#icon-mark" width="60" height="60"/></g>
+              <g id="campusWord" aria-label="CAMPUS wordmark">
+                <path class="letter letter-c" id="letter-c" d="M240 211H207C188 211 176 222 176 239C176 256 188 267 207 267H240"/>
+                <path class="letter letter-a" id="letter-a" d="M263 267 296 211 329 267M276 245H316"/>
+                <path class="letter letter-m" id="letter-m" d="M348 267V211L379 246 411 211V267"/>
+                <path class="letter letter-p" id="letter-p" d="M444 267V211H475C494 211 504 220 504 233C504 245 494 253 475 253H444"/>
+                <path class="letter letter-u" id="letter-u" d="M540 211V246C540 260 550 267 565 267C580 267 590 260 590 246V211"/>
+                <path class="letter letter-s" id="letter-s" d="M680 218C672 213 664 211 651 211H640C625 211 616 219 616 230C616 240 623 246 637 249L660 254C675 257 681 262 681 268C681 272 678 275 673 275H650C637 275 628 272 620 266"/>
+              </g>
+              <g id="plus">
+                <circle id="plusHalo" cx="817" cy="239" r="37" fill="#39cfff" opacity=".1" filter="url(#softGlow)"/>
+                <path d="M807 201Q807 197 811 197H824Q828 197 828 201V228H855Q859 228 859 232V245Q859 249 855 249H828V276Q828 280 824 280H811Q807 280 807 276V249H780Q776 249 776 245V232Q776 228 780 228H807Z" fill="url(#plusGradient)"/>
+                <circle id="plusRing" cx="817" cy="239" r="34" stroke="#8befff" stroke-width="1" fill="none" opacity="0"/>
+              </g>
+            </g>
+            <g id="comet" aria-hidden="true"><ellipse rx="17" ry="2.4" cx="-12" fill="#39cfff" opacity=".5" filter="url(#cometGlow)"/><circle r="7" fill="#39cfff" opacity=".7" filter="url(#cometGlow)"/><circle r="2.3" fill="#efffff"/></g>
+            <g id="particles" aria-hidden="true"></g>
+          </g>
+        </svg>
+        <button id="logoHitArea" aria-label="Campus Plus — replay the logo animation" title="Click to feel the possibility"></button>
+        <span id="plusHitArea" aria-hidden="true"></span>
+        <span class="stage-caption">MORE THAN A CAMPUS.</span>
+      </div>
+      <div class="hero-copy"><h1>Learn more. Connect more. <span>Achieve more.</span></h1><p>Everything you need. Everyone you’ll become.</p></div>
+      <div class="experience-toolbar">
+        <div class="playback-controls">
+          <button id="replayButton" class="replay-button"><svg><use href="#replay-icon"/></svg><span>Replay intro</span></button>
+          <button id="pauseButton" class="round-button" aria-label="Pause animation" aria-pressed="false"><svg viewBox="0 0 20 20"><path id="pauseShape" d="M7 5v10M13 5v10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+          <span class="control-divider"></span>
+          <button id="soundButton" class="sound-button" aria-pressed="false"><svg><use href="#sound-icon"/></svg><span>Sound off</span></button>
+        </div>
+        <div class="interaction-hint"><span class="pointer-symbol">⌁</span><span>Move to explore <i>·</i> Click to replay</span></div>
+        <span class="live-label"><i></i><span id="sceneStatus" role="status">THE INTRO</span></span>
+      </div>
+    </section>
+
+    <section class="possibilities" aria-label="A world of possibilities">
+      <div class="possibilities-heading"><span>A LITTLE PLUS.<br><strong>A WORLD OF POSSIBILITY.</strong></span><span class="section-line"></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v16M4 12h16" stroke="currentColor" stroke-width="1.2"/></svg></div>
+      <div class="feature-grid">
+        <button class="feature" data-open="learn"><span class="feature-icon"><svg viewBox="0 0 32 32"><path d="m16 9-9-4v18l9 4 9-4V5zm0 0v18M10 11l3 1m-3 4 3 1m6-5 3-1m-3 6 3-1"/></svg></span><span class="feature-copy"><span class="feature-title">Fuel your curiosity <svg><use href="#arrow"/></svg></span><span class="feature-description">Resources, skills & new perspectives.</span></span><span class="feature-number">01</span></button>
+        <button class="feature" data-open="connect"><span class="feature-icon"><svg viewBox="0 0 32 32"><circle cx="16" cy="10" r="4"/><path d="M8 26v-3a8 8 0 0 1 16 0v3M6 9a3 3 0 0 0 0 6M3 25v-3a6 6 0 0 1 3-5M26 9a3 3 0 0 1 0 6m3 10v-3a6 6 0 0 0-3-5"/></svg></span><span class="feature-copy"><span class="feature-title">Find your people <svg><use href="#arrow"/></svg></span><span class="feature-description">Communities, connections & belonging.</span></span><span class="feature-number">02</span></button>
+        <button class="feature" data-open="achieve"><span class="feature-icon"><svg viewBox="0 0 32 32"><path d="M6 26h20M8 21v-5h6v-5h6V5h6M9 10l8-8m-8 0h8v8"/></svg></span><span class="feature-copy"><span class="feature-title">Make your next move <svg><use href="#arrow"/></svg></span><span class="feature-description">Opportunities, ambition & what’s next.</span></span><span class="feature-number">03</span></button>
+      </div>
+    </section>
+  </main>
+  <footer><span>© <span id="year">2026</span> Campus+ <span class="footer-dot">·</span> Made for the next generation.</span><span class="footer-right">A brighter future starts with <strong>+</strong></span></footer>
+
+  <dialog id="detailDialog" aria-labelledby="dialogTitle"><button id="closeDialog" aria-label="Close panel">✕</button><div id="dialogContent"></div></dialog>
+  <noscript><style>#campusWord .letter,#plus,#campusIcon,#arc,#arcBloom,#orbitGhost,.hero-copy h1,.hero-copy p,.stage-caption{opacity:1!important;visibility:visible!important}#arc{stroke-dashoffset:0!important}.playback-controls,#logoHitArea,#plusHitArea{display:none}</style><p class="noscript-note">Campus+ — enable JavaScript to experience the animation and identity tools.</p></noscript>
+</body>
+</html>

@@ -1,0 +1,27 @@
+{
+  "name": "logodes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "python3 -m http.server 4173",
+    "preview": "python3 -m http.server 4173"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aminotkartik/LOGODES.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aminotkartik/LOGODES/issues"
+  },
+  "homepage": "https://github.com/aminotkartik/LOGODES#readme",
+  "dependencies": {
+    "@fontsource/dm-sans": "^5.3.0",
+    "@fontsource/outfit": "^5.3.0",
+    "gsap": "^3.15.0"
+  },
+  "private": true
+}
